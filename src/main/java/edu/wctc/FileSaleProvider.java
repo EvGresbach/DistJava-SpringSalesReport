@@ -22,10 +22,9 @@ public class FileSaleProvider implements SaleProvider{
                 Sale sale = new Sale(data[0], data[1], Double.parseDouble(data[2]), Double.parseDouble(data[3]));
                 sales.add(sale);
             }
-            return sales;
         }catch(FileNotFoundException e){
             System.out.println("Error occurred with file");
-            return null;
         }
+        return sales;
     }
 }

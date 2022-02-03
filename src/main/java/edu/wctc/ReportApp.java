@@ -20,17 +20,17 @@ public class ReportApp {
 
     @Bean
     public ReportFormatter reportFormatter(){
-        //return new SummaryReportFormatter();
-        return new DetailedReportFormatter();
+        return new SummaryReportFormatter();
+//        return new DetailedReportFormatter();
     }
     @Bean
     public SaleProvider saleProvider(){
-        //return new ConsoleSaleProvider();
-        return new FileSaleProvider();
+        return new ConsoleSaleProvider();
+//        return new FileSaleProvider();
     }
     @Bean
     public ShippingPolicy shippingPolicy(){
-        //return new FivePercentShippingPolicy();
-        return new FlatShippingPolicy();
+        return new FivePercentShippingPolicy();
+//        return new FlatShippingPolicy();
     }
 }
