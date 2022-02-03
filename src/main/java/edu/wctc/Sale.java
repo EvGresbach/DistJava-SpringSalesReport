@@ -7,12 +7,11 @@ public class Sale {
     private double tax;
     private double shipping;
 
-    public Sale(String customer, String country, double amount, double tax, double shipping) {
+    public Sale(String customer, String country, double amount, double tax) {
         this.customer = customer;
         this.country = country;
         this.amount = amount;
         this.tax = tax;
-        this.shipping = shipping;
     }
 
     public String getCustomer() {
@@ -33,5 +32,9 @@ public class Sale {
 
     public double getShipping() {
         return shipping;
+    }
+
+    public void setShipping(double shipping) {
+        this.shipping = shipping;
     }
 }

@@ -19,7 +19,7 @@ public class FileSaleProvider implements SaleProvider{
                 String line = scanner.nextLine();
                 String[] data = line.split(",");
 
-                Sale sale = new Sale(data[0], data[1], Double.parseDouble(data[2]), Double.parseDouble(data[3]), Double.parseDouble(data[4]));
+                Sale sale = new Sale(data[0], data[1], Double.parseDouble(data[2]), Double.parseDouble(data[3]));
                 sales.add(sale);
             }
             return sales;
