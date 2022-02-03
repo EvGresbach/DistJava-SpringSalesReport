@@ -1,11 +1,5 @@
 package edu.wctc;
 
-import lombok.Data;
-import lombok.NoArgsConstructor;
-//lombok allows us to avoid boilerplate code like getters, setters, and constructors
-
-@Data
-@NoArgsConstructor
 public class Sale {
     private String customer;
     private String country;
@@ -13,4 +7,31 @@ public class Sale {
     private double tax;
     private double shipping;
 
+    public Sale(String customer, String country, double amount, double tax, double shipping) {
+        this.customer = customer;
+        this.country = country;
+        this.amount = amount;
+        this.tax = tax;
+        this.shipping = shipping;
+    }
+
+    public String getCustomer() {
+        return customer;
+    }
+
+    public String getCountry() {
+        return country;
+    }
+
+    public double getAmount() {
+        return amount;
+    }
+
+    public double getTax() {
+        return tax;
+    }
+
+    public double getShipping() {
+        return shipping;
+    }
 }
